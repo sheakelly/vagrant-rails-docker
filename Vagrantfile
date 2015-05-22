@@ -12,7 +12,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
  
   config.vm.box = "ubuntu/trusty64"
-  config.vm.hostname = "vagrant-docker-rails"  
+  config.vm.hostname = "vagrant-rails-docker"  
   config.vm.network "forwarded_port", guest: 3000, host: 3000     
   config.vm.network "forwarded_port", guest: 80, host: 8000
   config.vm.synced_folder ".", "/vagrant", disabled: false
